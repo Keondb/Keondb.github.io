@@ -71,6 +71,39 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-READMEs" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/02/16/READMEs/" class="article-date">
+  <time class="dt-published" datetime="2021-02-15T16:00:07.046Z" itemprop="datePublished">2021-02-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="Hexo-博客添加-README-md-以及部署到-GitHub-丢失-显示不正常解决方法"><a href="#Hexo-博客添加-README-md-以及部署到-GitHub-丢失-显示不正常解决方法" class="headerlink" title="Hexo 博客添加 README.md 以及部署到 GitHub 丢失/显示不正常解决方法"></a>Hexo 博客添加 README.md 以及部署到 GitHub 丢失/显示不正常解决方法</h1><p>GitHub 项目的README.md为自述文件，可对该项目进行介绍，解释等。</p>
+<p>使用 Github Pages 和 Hexo 搭建的博客，如果在最开始建立仓库的时候没有创建README.md文件，那么在后期如何添加呢？</p>
+<p>添加方法：在根目录 source 文件夹下新建README.md即可，该文件使用 Markdown 语法。</p>
+<p>然而当我们执行 hexo g -d 部署博客的时候会发现README.md变成了 README.html</p>
+<p>原因就在于当我们在执行 hexo g -d 命令时，.md 文件会被转化成 HTML 文件，并将这些文件放到 public 目录里，最后再提交到远程 GitHub 仓库，而 Hexo 也提供了一个方法，让md文件不被转换成HTML，在根目录的 _config.yml 配置文件里，找到 skip_render 关键字，添加 README.md，让解释器跳过渲染就行了：<br>skip_render: README.md</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/02/16/READMEs/" data-id="ckl6rmu3f00008wq19bvp60r1" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-images" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2021/02/15/images/" class="article-date">
@@ -88,7 +121,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/02/15/images/" data-id="ckl6rbd260001gsq179xf7dgd" data-title="" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/02/15/images/" data-id="ckl6rmu4900038wq1hppzhh62" data-title="" class="article-share-link">Share</a>
       
       
       
@@ -159,7 +192,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/02/15/markdownlint/" data-id="ckl6rbd2a0002gsq138467d1r" data-title="" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/02/15/markdownlint/" data-id="ckl6rmu4600028wq1cdznd989" data-title="" class="article-share-link">Share</a>
       
       
       
@@ -198,7 +231,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/02/15/vscode-Markdown%20/" data-id="ckl6rbd2i0004gsq15rnhfwdy" data-title="" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/02/15/vscode-Markdown%20/" data-id="ckl6rmu4m00058wq15j985wjc" data-title="" class="article-share-link">Share</a>
       
       
       
@@ -236,7 +269,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/02/15/test-my-site/" data-id="ckl6rbd2f0003gsq14fe91j5u" data-title="test_my_site" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/02/15/test-my-site/" data-id="ckl6rmu4j00048wq1coz1fe9z" data-title="test_my_site" class="article-share-link">Share</a>
       
       
       
@@ -283,7 +316,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/02/15/hello-world/" data-id="ckl6rbd1q0000gsq178bm1uh0" data-title="Hello World" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/02/15/hello-world/" data-id="ckl6rmu3y00018wq1fprta2nq" data-title="Hello World" class="article-share-link">Share</a>
       
       
       
@@ -326,6 +359,10 @@
       <ul>
         
           <li>
+            <a href="/2021/02/16/READMEs/">(no title)</a>
+          </li>
+        
+          <li>
             <a href="/2021/02/15/images/">(no title)</a>
           </li>
         
@@ -339,10 +376,6 @@
         
           <li>
             <a href="/2021/02/15/test-my-site/">test_my_site</a>
-          </li>
-        
-          <li>
-            <a href="/2021/02/15/hello-world/">Hello World</a>
           </li>
         
       </ul>
